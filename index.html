@@ -158,10 +158,10 @@
             <h1 class="header">Contact Me</h1>
             <p>Please email me if you want to work with me.</p>
             <div class="form-container">
-                <form action="#" method="post" class="contact-form">
+                <form action="POST" data-netlify method="post" class="contact-form">
                     <div class="input-container">
-                        <input type="text" id="input-name" placeholder="Name">
-                        <input type="text" id="input-email" placeholder="Email">
+                        <input type="text" id="input-name" name ="name" placeholder="Name">
+                        <input type="text" id="input-email" name="email" placeholder="Email">
                     </div>
                     <textarea label="Message" name="message" id="contact-input" cols="30" rows="10"></textarea>
                     <input type="submit" class="button" value="Send">
