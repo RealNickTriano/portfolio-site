@@ -30,6 +30,13 @@ img {
     padding: 0 30px;
 }
 
+.profile-pic {
+    max-width: 25%;
+    margin-left: 10rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 a{
     color: black;
 }
@@ -374,6 +381,10 @@ li{
         grid-column: 2;
     }
     
+    .flex {
+        display: flex;
+    }
+
     .top-timeline {
         /*Now right timeline*/
         display: flex;
