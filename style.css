@@ -346,7 +346,16 @@ li{
     max-width: 20px;
 }
 
+.flex {
+    display: flex; 
+}
+
 @media(max-width: 500px){
+
+    body {
+        text-align: center;
+    }
+
     .down-triangle{
         /*Now right triangles*/
         width: 0;
@@ -370,6 +379,10 @@ li{
         margin: 0;
         padding: 0;
     }
+
+    .main-header {
+        max-height: 550px;
+    }
     
     .divider{
         height: 800px;
@@ -379,10 +392,6 @@ li{
         margin: 0;
         grid-row: 1 / 5;
         grid-column: 2;
-    }
-    
-    .flex {
-        display: flex;
     }
 
     .top-timeline {
@@ -397,12 +406,30 @@ li{
         height: 100%;
     }
 
+    .tech-stack {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #rutgers {
         margin-top: 60px;
     }
 
     #twenty{
         margin-top: 55px;
+    }
+
+    .flex {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
     }
 
     #twentytwo {
