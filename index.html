@@ -173,10 +173,10 @@
             <div class="form-container">
                 <form action="POST" data-netlify method="post" class="contact-form">
                     <div class="input-container">
-                        <input type="text" id="input-name" name ="name" placeholder="Name">
-                        <input type="text" id="input-email" name="email" placeholder="Email">
+                        <input type="text" id="input-name" name ="name" required placeholder="Name">
+                        <input type="text" id="input-email" name="email" required placeholder="Email">
                     </div>
-                    <textarea label="Message" name="message" id="contact-input" cols="30" rows="10"></textarea>
+                    <textarea label="Message" name="message" required id="contact-input" cols="30" rows="10"></textarea>
                     <div class="field">
                         <div data-netlify-recaptcha="true"></div>
                     </div>
