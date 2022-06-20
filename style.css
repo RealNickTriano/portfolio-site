@@ -49,6 +49,7 @@ a{
 .button:hover{
     background-color: black;
     color: whitesmoke;
+    cursor: pointer;
 }
 
 input{
