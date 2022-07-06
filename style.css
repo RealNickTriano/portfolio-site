@@ -100,9 +100,17 @@ input:focus, textarea:focus{
     background-color: #b1ddd9;
     height: 60px; 
     width: 100%;
+    transition: all 0.5s;
+    
+}
+
+.navbar-scroll{
     position: fixed;
     box-shadow: 0 3px 5px rgba(0,0,0,0.6);
     border-radius: 0 0 10px 10px;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    transition: all 1s;
 }
 
 .navbar .container{
@@ -151,6 +159,12 @@ li{
     padding-top: 100px;
     padding-bottom: 100px;
     line-height: 1.5;
+    
+}
+
+.mt-100{
+    margin-top: 100px;
+    transition: all 0.5s;
 }
 
 .text-section{
@@ -527,5 +541,15 @@ li{
 
 .socials-ul img{
     max-width: 50px;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translate(0, -50px)
+    }
+
+    to {
+        transform: translate(0, 0)
+    }
 }
 
