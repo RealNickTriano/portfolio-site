@@ -16,17 +16,15 @@ const year = new Date().getFullYear();
 copyright.innerHTML = `&copy; ${year} Nicholas Triano`;
 
 //Handle navabar change on scroll
-window.onscroll = () => {
+/* window.onscroll = () => {
     if(document.documentElement.scrollTop > 50)
     {
-        nav.classList.add('navbar-scroll');
-        mainHeader.classList.add('mt-100');
+
     }
     else{
-        nav.classList.remove('navbar-scroll');
-        mainHeader.classList.remove('mt-100');
+
     }
-}
+} */
 
 home.addEventListener('click', (event) => {
     event.preventDefault();
@@ -59,5 +57,32 @@ contact.addEventListener('click', (event) => {
 
     window.scrollTo({top: y, behavior: 'smooth'});
 });
+
+// Hover listeners
+
+home.addEventListener('mouseover', (event) => {
+    home.nextElementSibling.classList.add('nav-line-animate')
+})
+home.addEventListener('mouseout', (event) => {
+    home.nextElementSibling.classList.remove('nav-line-animate')
+})
+about.addEventListener('mouseover', (event) => {
+    about.nextElementSibling.classList.add('nav-line-animate')
+})
+about.addEventListener('mouseout', (event) => {
+    about.nextElementSibling.classList.remove('nav-line-animate')
+})
+projects.addEventListener('mouseover', (event) => {
+    projects.nextElementSibling.classList.add('nav-line-animate')
+})
+projects.addEventListener('mouseout', (event) => {
+    projects.nextElementSibling.classList.remove('nav-line-animate')
+})
+contact.addEventListener('mouseover', (event) => {
+    contact.nextElementSibling.classList.add('nav-line-animate')
+})
+contact.addEventListener('mouseout', (event) => {
+    contact.nextElementSibling.classList.remove('nav-line-animate')
+})
 
 
